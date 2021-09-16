@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #767a99;
+    font-family: "Roboto Mono", monospace;
+}
+
+.calculator {
+    width: 300px;
+    height: 500px;
+    background-color: #333a58;
+}
+.visor {
+    width: 90%;
+    height: 25%;
+    margin: 5%;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    align-items: self-end;
+    font-weight: 200;
+}
+.buttons {
+    width: 96%;
+    height: 68%;
+    margin: 2%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    user-select: none;
+}
+.actionButton {
+    background-color: #50556e;
+    color: #bd4e73;
+}
+.actionButton:hover {
+    background-color: #21bfa687;
+}
+
+.numberButton {
+    background-color: #3b3f5d;
+    color: #fff;
+}
+.numberButton:hover {
+    background-color: #1f4e77;
+}
+
+.resultButton {
+    background-color: #ff3764;
+    height: calc(200% + 5px);
+    color: #fff;
+}
+.resultButton:hover {
+    background-color: #bb1d41;
+}
+
+.actionButton,
+.numberButton,
+.resultButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.result,
+.historic {
+    max-width: 270px;
+    background: none;
+    border: none;
+    color: #fff;
+    outline: none;
+}
+.result {
+    font-size: 50px;
+    direction: rtl;
+}
+
+.historic {
+    font-size: 30px;
+    text-align: right;
+}

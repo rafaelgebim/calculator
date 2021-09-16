@@ -1,0 +1,48 @@
+<html lang="pt-br">
+
+<head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="calculator">
+
+            <div class="visor">
+                <input class="historic" id="historic" disabled>
+                <input class="result" id="result" disabled>
+            </div>
+
+            <div class="buttons">
+                <div class="actionButton" onclick="onButtonClicked('C')">C</div>
+                <div class="actionButton" onclick="onButtonClicked('%')">%</div>
+                <div class="actionButton" onclick="onButtonClicked('÷')">÷</div>
+                <div class="actionButton" onclick="onButtonClicked('x')">x</div>
+                <div class="numberButton" onclick="onButtonClicked('7')">7</div>
+                <div class="numberButton" onclick="onButtonClicked('8')">8</div>
+                <div class="numberButton" onclick="onButtonClicked('9')">9</div>
+                <div class="actionButton" onclick="onButtonClicked('-')">-</div>
+                <div class="numberButton" onclick="onButtonClicked('4')">4</div>
+                <div class="numberButton" onclick="onButtonClicked('5')">5</div>
+                <div class="numberButton" onclick="onButtonClicked('6')">6</div>
+                <div class="actionButton" onclick="onButtonClicked('+')">+</div>
+                <div class="numberButton" onclick="onButtonClicked('1')">1</div>
+                <div class="numberButton" onclick="onButtonClicked('2')">2</div>
+                <div class="numberButton" onclick="onButtonClicked('3')">3</div>
+                <div class="resultButton" onclick="onButtonClicked('=')">=</div>
+                <div class="numberButton" onclick="onButtonClicked('0')">0</div>
+                <div class="numberButton" onclick="onButtonClicked('.')">.</div>
+                <div class="numberButton" onclick="onButtonClicked('←')">←</div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- #333a58 -->
